@@ -35,7 +35,7 @@ Found a bug? Report it [here](https://github.com/learnpack/learnpack/issues/new)
 
 1. First, make sure you have LearnPack CLI installed:
 ```bash
-$ npm install learnpack -g
+$ npm install @learnpack/learnpack-cli -g
 ```
 
 2. Clone this repository:
