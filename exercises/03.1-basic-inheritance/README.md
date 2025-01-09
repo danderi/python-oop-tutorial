@@ -1,25 +1,50 @@
-# Basic Inheritance Exercise
+# Let's Create a Pet Family! 🐾
 
-## 📝 Instructions
+Hey! Remember how we talked about inheritance being like a family tree? Now we're going to create our own programming family with animals!
 
-1. Create a base class called `Animal` in `app.py` with:
-   - An `__init__` method that takes `name` and `species` as parameters
-   - A method called `make_sound()` that prints "Some generic sound"
+## Why Are We Making This? 🐕
 
-2. Create a derived class called `Dog` that inherits from `Animal`:
-   - Override the `make_sound()` method to print "Woof!"
-   - Add a new method called `fetch()` that prints "{name} is fetching the ball"
+Think about pets:
+- All animals can make sounds and have names
+- But dogs are special - they can fetch things!
+- This is perfect for learning how inheritance works
 
-## 💡 Hints
+We'll create:
+1. A basic `Animal` class (like a parent)
+2. A special `Dog` class (like a child) that can do everything an animal can do, plus more!
 
-- Use the `class ChildClass(ParentClass):` syntax for inheritance
-- Remember to call the parent's `__init__` using `super().__init__()`
-- Override methods by defining them with the same name in the child class
+## What We'll Learn 📚
 
-## Expected Output
-When running test code:
+- How to create a basic class that other classes can inherit from
+- How to make a new class that builds on the basic one
+- How to add special abilities to our new class
+- How to use features from the parent class
+
+## 📝 Your Task
+
+1. Create a base class called `Animal` that:
+   - Takes a name and species when created
+   - Can make a basic sound
+
+2. Create a `Dog` class that:
+   - Is a special type of Animal
+   - Makes a "Woof!" sound instead of the basic animal sound
+   - Can fetch things!
+
+## 💡 Need Help?
+
+- Use `class Dog(Animal):` to say that Dog is a type of Animal
+- Use `super().__init__()` to set up the Animal part of your Dog
+- When a dog makes a sound, it should override (replace) the animal sound
+- Add a new `fetch()` method that only dogs have
+
+## What Should Happen? 🎯
+
+When you run this code:
 ```python
 dog = Dog("Buddy", "Canine")
 dog.make_sound()  # Should print: "Woof!"
 dog.fetch()       # Should print: "Buddy is fetching the ball"
 ```
+
+Think of it like this: Just like how you can do everything your parents can do (like walk and talk) plus your own special things, a Dog can do everything an Animal can do plus its own special tricks! 🌟
