@@ -1,0 +1,17 @@
+{
+    "title": "Learn Object Oriented Programming with Python",
+    "slug": "python-oop-tutorial",
+    "repository": "https://github.com/4GeeksAcademy/python-oop-tutorial",
+    "preview": "https://github.com/4GeeksAcademy/python-oop-tutorial/blob/main/preview.gif?raw=true",
+    "description": "Learn Object Oriented Programming concepts using Python, from basic to advanced topics",
+    "duration": 6,
+    "difficulty": "easy",
+    "videoSolutions": false,
+    "bugsLink": "https://github.com/learnpack/learnpack/issues/new",
+    "graded": true,
+    "config": {
+        "editor": {
+            "version": "1.0.73"
+        }
+    }
+}
