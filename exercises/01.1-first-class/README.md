@@ -1,45 +1,66 @@
-# Creating Your First Class - Let's Start Simple! 🎨
+# Creating Your First Class - Let's Start Simple 🚀
 
-Hey! Remember when we talked about classes being like blueprints? Well, now we're going to create our very first blueprint! We'll make a simple `Person` class that will help us understand how classes work.
+Hello! Today we're going to learn how to create a "class" in Python. If you've never heard of this before, don't worry! Here's a simple explanation:
 
-## Why Are We Making This? 🤔
+- A class is like a **mold** or a **template**.
+- For example, if we wanted to describe "people," we could create a mold called `Person`. This mold could define that every person has a name and can greet others.
 
-In real life, every person has a name and can say hello to others, right? We're going to create a simple class that does just that! This will help us understand:
-- How to create a basic class (our blueprint)
-- How to give our class some basic information (like a name)
-- How to make our class do something (like say hello)
+Let's create our own mold called `Person` so Python can use it!
 
-## What We'll Learn 📚
+---
 
-- How to create a class using the `class` keyword
-- How to add information to our class using `__init__` (this is like setting things up when we first create something)
-- How to make our class do things using methods (these are like special actions our class can perform)
+## 📝 Instructions
 
-## 📝 Your Task
+1. **Create the mold.** Write this in your `app.py` file:
 
-1. Open `app.py` and create a class called `Person`
-2. Add a special setup method (`__init__`) that takes a person's name
-3. Store the name so we can use it later
-4. Add a method called `greet` that will make our person say hello
-
-## 💡 Need Help? 
-
-- To create a class, start with `class Person:`
-- The `__init__` method is special - it runs when we create a new person
-- Use `self.name` to store the name (think of `self` as "myself" - it's how the class refers to itself)
-- Your `greet` method should print something like "Hello, my name is (whatever name was given)"
-
-## What Should Happen? 🎯
-
-When someone uses your class like this:
 ```python
-person = Person("Bob")
-person.greet()
+class Person:
+    pass
 ```
 
-They should see:
-```
-Hello, my name is Bob
+Now you have a basic class called `Person`. It doesn’t do anything yet, but it exists.
+
+
+2. **Add basic information (a name).** We want every person to have a name. For that, we use something special called `__init__`. This is a method that sets up our person when we create it:
+
+
+```python
+class Persona:
+    def __init__(self, name):
+        self.name = name
 ```
 
-Don't worry if it seems tricky at first - we all start somewhere! Give it a try, and remember: coding is like learning a new language, it takes practice! 🌟
+--
+- `__init__` is executed automatically when we create a person.
+- `self.name` stores the name so that we can use it later.
+
+--
+
+3. **Make our person greet**. Now we want the class to do something. We will add a method called `greet` that will print a message:
+
+```python
+class Persona:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+    def greet(self):
+        print(f"Hello, my name is {self.name}")
+```
+
+--
+
+- `greet` is an action that our class can perform.
+- It uses the name we stored with `self.name` to personalize the greeting.
+
+4. **Use your class.** Write the following code below your class in `app.py` and run it:
+
+```python
+   person = Person("John")
+   person.greet()
+```
+
+You should see in the terminal:
+
+```
+Hello, my name is John
+```

@@ -1,6 +1,6 @@
 # Understanding Class Parts: Attributes and Methods 🧩
 
-Hey there! Now that you've created your first class, let's talk about the two main parts that make up a class: attributes and methods. Don't worry - they're simpler than they sound!
+Now that you've created your first class, let's talk about the two main parts that make up a class: attributes and methods. Don't worry - they're simpler than they sound!
 
 ## Think of it Like a Toy Robot 🤖
 
