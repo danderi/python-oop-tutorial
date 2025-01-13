@@ -1,60 +1,47 @@
-# Building a Smart Library System! 📚
+# Building an Intelligent Library System! 📚
 
-Hey there! Let's create a library system where books can be shared between different parts of our program - but in a safe and organized way!
+We are going to create a library system where books can be shared between different parts of our program, but in a safe and organized way! The goal of this exercise is to learn about protected attributes in Python while building a basic library management system.
 
-## Why Are We Making This? 🤔
-
-Think about a real library:
-- Books have titles, authors, and availability status
-- Library workers can update book information
-- Some information is shared between different library departments
-- But we still want to keep things organized and prevent mistakes
-
-This is perfect for learning about protected attributes because:
+This exercise is perfect for learning about protected attributes because:
 - Some information needs to be shared (like book titles)
-- But we want to be careful about how it's used
+- We want to be careful about how it is used
 - It's like having "staff only" areas in a library!
 
-## What We'll Build 📝
+## 📝 Instructions
 
-1. First, we'll create a `LibraryItem` class that:
-   - Has protected information about items (title, author, availability)
-   - Has safe ways to check out and return items
-   - Keeps track of what's available
-   - Uses protected methods to update availability
+1. Create a class called `LibraryItem`.
 
-2. Then, we'll make a special `Book` class that:
-   - Is a type of LibraryItem
-   - Adds an ISBN number
-   - Can show all its information nicely
-   - Uses the protected stuff from LibraryItem safely
+2. In the constructor (`__init__`), add protected attributes:
+   - `_title`: title of the item (string).
+   - `_author`: author of the item (string).
+   - `_is_available`: availability status (boolean, starts as `True`).
 
-## 💡 Need Help?
+3. Create a protected method called `_update_availability` that updates the availability status of the item.
 
-- Use `_` (single underscore) for protected things
+```python
+   def _update_availability(self, is_available):
+       self._is_available = is_available
+```
+
+4. Define a public method `lend_item` that checks if the item is available. If it is available, update the status to "not available" using `_update_availability`. If it is not available, print a message indicating that it is already lent out.
+
+5. Define another public method `return_item` that marks the item as available.
+
+6. Create a class `Book` that inherits from `LibraryItem` and adds a protected attribute `_isbn` in the constructor to store the book's ISBN number.
+
+```python
+   def __init__(self, title, author, isbn):
+        super().__init__(title, author)
+        self._isbn = isbn
+```
+
+7. Implement a public method called `display_info` that shows all the information of the book (title, author, availability, and ISBN) in an organized manner. Example: `Book: {title} by {author} (ISBN: {isbn}) - Available: {available}`
+
+8. **Test your solution.** Create an instance of the `Book` class called `book` with information such as title, author, and ISBN. Call the methods `lend_item` and `return_item` to verify that they work correctly. Use the `display_info` method to display the book's information at each step.
+
+## 💡 Tips
+
+- Use `_` (underscore) for protected things
 - Protected means "please be careful with this"
 - Child classes can use protected things from their parent
 - Use clear names to show what should be protected
-
-## Why Protected vs Private? 🔐
-
-Protected attributes are like having a "staff only" door:
-1. Library workers (child classes) can use them
-2. They're marked with a special sign (`_`)
-3. They're great for sharing between related parts
-4. They're more flexible than completely private things
-
-## What Should Happen? 🎯
-
-When you use your library system like this:
-```python
-book = Book("Python Programming", "John Smith", "123-456-789")
-print(book.display_info())
-# Should print: "Book: Python Programming by John Smith (ISBN: 123-456-789) - Available: True"
-
-book.check_out()
-print(book.display_info())
-# Should print: "Book: Python Programming by John Smith (ISBN: 123-456-789) - Available: False"
-```
-
-Think of it like having a real library where different departments need to work together, but everything stays organized and safe! 🌟
