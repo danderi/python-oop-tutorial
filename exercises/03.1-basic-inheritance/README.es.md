@@ -18,17 +18,26 @@ Vamos a crear nuestra propia familia de programación con animales. En este ejer
 class Dog(Animal):
     pass
 ```
-5. Sobrescribe el método make_sound en la clase `Dog` para que imprima `"Woof!"` en lugar del sonido genérico.
+5. En el método __init__ de `Dog`, utiliza `super().__init__()` para llamar al constructor de Animal. Asegúrate de que la clase **Dog** reciba también los parámetros name y species y los pase al constructor de la clase base.
 
-6. Agrega a la clase `Dog` un método llamado fetch que imprima un mensaje como `"<name> is fetching the ball"`.
+```python
+# Clase derivada Dog
+class Dog(Animal):
+    def __init__(self, name, species):
+        super().__init__(name, species)  # Inicializa los atributos de la clase base
+```
 
-7. **Prueba tu solución.** Crea una instancia de la clase `Dog` llamada `my_dog` con:
+6. Sobrescribe el método make_sound en la clase `Dog` para que imprima `"Woof!"` en lugar del sonido genérico.
+
+7. Agrega a la clase `Dog` un método llamado fetch que imprima un mensaje como `"<name> is fetching the ball"`.
+
+8. **Prueba tu solución.** Crea una instancia de la clase `Dog` llamada `my_dog` con:
 
 ```bash
 name: "Buddy"
 specie: "Canine"
 ```
-8. Llama a los métodos `make_sound` y `fetch` en `my_dog`.
+9. Llama a los métodos `make_sound` y `fetch` en `my_dog`.
 
 Deberías ver en pantalla:
 

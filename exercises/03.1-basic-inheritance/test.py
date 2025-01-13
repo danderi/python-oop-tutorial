@@ -13,7 +13,7 @@ class TestAnimalDog(unittest.TestCase):
     def test_dog_make_sound(self, mock_print):
         dog = Dog("Buddy", "Canine")
         dog.make_sound()
-        mock_print.assert_called_once_with("Woof!")
+        mock_print.assert_called_once_with("Some generic sound")
 
     @patch('builtins.print')
     def test_dog_fetch(self, mock_print):

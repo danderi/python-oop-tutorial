@@ -54,7 +54,7 @@
         "translations": []
     },
     "address": "http://localhost:3000",
-    "currentExercise": "01.0-introduction-to-oop",
+    "currentExercise": null,
     "exercises": [
         {
             "position": 0,
@@ -277,17 +277,23 @@
             "path": "exercises\\03.2-multiple-inheritance",
             "slug": "03.2-multiple-inheritance",
             "translations": {
+                "es": "README.es.md",
                 "us": "README.md"
             },
             "language": "python3",
             "entry": "exercises\\03.2-multiple-inheritance/app.py",
             "title": "03.2-multiple-inheritance",
-            "graded": false,
+            "graded": true,
             "files": [
                 {
                     "path": "exercises\\03.2-multiple-inheritance/app.py",
                     "name": "app.py",
                     "hidden": false
+                },
+                {
+                    "path": "exercises\\03.2-multiple-inheritance/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
                 },
                 {
                     "path": "exercises\\03.2-multiple-inheritance/README.md",
@@ -298,6 +304,16 @@
                     "path": "exercises\\03.2-multiple-inheritance/solution.hide.py",
                     "name": "solution.hide.py",
                     "hidden": true
+                },
+                {
+                    "path": "exercises\\03.2-multiple-inheritance/test.py",
+                    "name": "test.py",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises\\03.2-multiple-inheritance/__pycache__",
+                    "name": "__pycache__",
+                    "hidden": true
                 }
             ],
             "done": false
@@ -307,6 +323,7 @@
             "path": "exercises\\04.0-encapsulation",
             "slug": "04.0-encapsulation",
             "translations": {
+                "es": "README.es.md",
                 "us": "README.md"
             },
             "language": null,
@@ -314,6 +331,11 @@
             "title": "04.0-encapsulation",
             "graded": false,
             "files": [
+                {
+                    "path": "exercises\\04.0-encapsulation/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
                 {
                     "path": "exercises\\04.0-encapsulation/README.md",
                     "name": "README.md",
@@ -327,17 +349,23 @@
             "path": "exercises\\04.1-private-attributes",
             "slug": "04.1-private-attributes",
             "translations": {
+                "es": "README.es.md",
                 "us": "README.md"
             },
             "language": "python3",
             "entry": "exercises\\04.1-private-attributes/app.py",
             "title": "04.1-private-attributes",
-            "graded": false,
+            "graded": true,
             "files": [
                 {
                     "path": "exercises\\04.1-private-attributes/app.py",
                     "name": "app.py",
                     "hidden": false
+                },
+                {
+                    "path": "exercises\\04.1-private-attributes/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
                 },
                 {
                     "path": "exercises\\04.1-private-attributes/README.md",
@@ -348,6 +376,11 @@
                     "path": "exercises\\04.1-private-attributes/solution.hide.py",
                     "name": "solution.hide.py",
                     "hidden": true
+                },
+                {
+                    "path": "exercises\\04.1-private-attributes/test.py",
+                    "name": "test.py",
+                    "hidden": true
                 }
             ],
             "done": false
@@ -357,17 +390,23 @@
             "path": "exercises\\04.2-property-decorators",
             "slug": "04.2-property-decorators",
             "translations": {
+                "es": "README.es.md",
                 "us": "README.md"
             },
             "language": "python3",
             "entry": "exercises\\04.2-property-decorators/app.py",
             "title": "04.2-property-decorators",
-            "graded": false,
+            "graded": true,
             "files": [
                 {
                     "path": "exercises\\04.2-property-decorators/app.py",
                     "name": "app.py",
                     "hidden": false
+                },
+                {
+                    "path": "exercises\\04.2-property-decorators/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
                 },
                 {
                     "path": "exercises\\04.2-property-decorators/README.md",
@@ -377,6 +416,11 @@
                 {
                     "path": "exercises\\04.2-property-decorators/solution.hide.py",
                     "name": "solution.hide.py",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises\\04.2-property-decorators/test.py",
+                    "name": "test.py",
                     "hidden": true
                 }
             ],
@@ -526,5 +570,5 @@
     "bugsLink": null,
     "videoSolutions": false,
     "localhostOnly": false,
-    "session": 2860659734375830000
+    "session": 556159548579686660
 }

@@ -17,18 +17,27 @@ class Dog(Animal):
    pass
 ```
 
-5. Override the `make_sound` method in the `Dog` class to print `"Woof!"` instead of the generic sound.
+5. In the `__init__` method of `Dog`, use `super().__init__()` to call the constructor of `Animal`. Ensure that the **Dog** class also receives the parameters `name` and `species` and passes them to the base class constructor.
 
-6. Add a method called `fetch` to the `Dog` class that prints a message like `"<name> is fetching the ball"`.
+```python
+# Derived class Dog
+class Dog(Animal):
+   def __init__(self, name, species):
+      super().__init__(name, species)  # Initialize the base class attributes
+```
 
-7. **Test your solution.** Create an instance of the `Dog` class called `my_dog` with:
+6. Override the `make_sound` method in the `Dog` class to print `"Woof!"` instead of the generic sound.
+
+7. Add a method called `fetch` to the `Dog` class that prints a message like `"<name> is fetching the ball"`.
+
+8. **Test your solution.** Create an instance of the `Dog` class called `my_dog` with:
 
 ```bash
 name: "Buddy"
 species: "Canine"
 ```
 
-8. Call the `make_sound` and `fetch` methods on `my_dog`.
+9. Call the `make_sound` and `fetch` methods on `my_dog`.
 
 You should see on the screen:
 
