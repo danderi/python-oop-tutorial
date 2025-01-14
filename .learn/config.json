@@ -5,7 +5,7 @@
         "editor": {
             "mode": "extension",
             "agent": "vscode",
-            "version": "5.0.66"
+            "version": "5.0.68"
         },
         "dirPath": "./.learn",
         "configPath": "learn.json",
@@ -625,5 +625,5 @@
     "bugsLink": null,
     "videoSolutions": false,
     "localhostOnly": false,
-    "session": 811601844551510500
+    "session": 4880119670538123000
 }
