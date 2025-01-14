@@ -54,7 +54,7 @@
         "translations": []
     },
     "address": "http://localhost:3000",
-    "currentExercise": null,
+    "currentExercise": "01.1-first-class",
     "exercises": [
         {
             "position": 0,
@@ -600,5 +600,5 @@
     "bugsLink": null,
     "videoSolutions": false,
     "localhostOnly": false,
-    "session": 9634482850085143000
+    "session": 1095299003807970200
 }

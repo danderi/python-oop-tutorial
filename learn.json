@@ -1,9 +1,15 @@
 {
-    "title": "Learn Object Oriented Programming with Python",
+    "title": {
+        "en": "Learn Object Oriented Programming with Python",
+        "es": "Aprende Programación Orientada a Objetos con Python"
+    },
     "slug": "python-oop-tutorial",
     "repository": "https://github.com/4GeeksAcademy/python-oop-tutorial",
     "preview": "https://github.com/4GeeksAcademy/python-oop-tutorial/blob/main/preview.gif?raw=true",
-    "description": "Learn Object Oriented Programming concepts using Python, from basic to advanced topics",
+    "description": {
+        "en": "Learn Object Oriented Programming concepts using Python, from basic to advanced topics",
+        "es": "Aprende conceptos de Programación Orientada a Objetos usando Python, desde temas básicos hasta avanzados"
+    },
     "duration": 6,
     "difficulty": "easy",
     "videoSolutions": false,
