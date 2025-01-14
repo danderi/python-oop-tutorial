@@ -31,7 +31,7 @@
             "java": "app.java"
         },
         "suggestions": {
-            "agent": null
+            "agent": "vscode"
         },
         "warnings": {
             "agent": null
@@ -119,11 +119,6 @@
                     "path": "exercises\\01.1-first-class/test.py",
                     "name": "test.py",
                     "hidden": true
-                },
-                {
-                    "path": "exercises\\01.1-first-class/__pycache__",
-                    "name": "__pycache__",
-                    "hidden": true
                 }
             ],
             "done": false
@@ -190,11 +185,6 @@
                 {
                     "path": "exercises\\02.1-adding-attributes/test.py",
                     "name": "test.py",
-                    "hidden": true
-                },
-                {
-                    "path": "exercises\\02.1-adding-attributes/__pycache__",
-                    "name": "__pycache__",
                     "hidden": true
                 }
             ],
@@ -263,11 +253,6 @@
                     "path": "exercises\\03.1-basic-inheritance/test.py",
                     "name": "test.py",
                     "hidden": true
-                },
-                {
-                    "path": "exercises\\03.1-basic-inheritance/__pycache__",
-                    "name": "__pycache__",
-                    "hidden": true
                 }
             ],
             "done": false
@@ -308,11 +293,6 @@
                 {
                     "path": "exercises\\03.2-multiple-inheritance/test.py",
                     "name": "test.py",
-                    "hidden": true
-                },
-                {
-                    "path": "exercises\\03.2-multiple-inheritance/__pycache__",
-                    "name": "__pycache__",
                     "hidden": true
                 }
             ],
@@ -462,11 +442,6 @@
                 {
                     "path": "exercises\\04.3-protected-attributes/test.py",
                     "name": "test.py",
-                    "hidden": true
-                },
-                {
-                    "path": "exercises\\04.3-protected-attributes/__pycache__",
-                    "name": "__pycache__",
                     "hidden": true
                 }
             ],
@@ -625,5 +600,5 @@
     "bugsLink": null,
     "videoSolutions": false,
     "localhostOnly": false,
-    "session": 4880119670538123000
+    "session": 9634482850085143000
 }
