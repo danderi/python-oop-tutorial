@@ -11,10 +11,7 @@ class DataManager:
     
     def process_data(self, data):
         """Process data using the provided processor"""
-        pass
-    
-    def get_processed_data(self):
-        """Get the processed data in the processor's format"""
+        # write your code here
         pass
 
 # Create your JsonProcessor class here
