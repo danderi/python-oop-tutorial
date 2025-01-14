@@ -1,73 +1,41 @@
 # Building a Cool Media Player System! 🎵
 
-Hey! Let's create something fun - a system for playing different types of media, like music and videos. We'll use something called "abstract classes" to make sure everything works together nicely!
+In this exercise, you will learn how to use **abstract classes** in Python to create shared rules among related classes and how to override abstract methods in derived classes to implement specific behaviors, by creating a system that can play music and videos.
 
-## Why Are We Making This? 🎬
+Before we start, let's remember that **abstract classes** are templates for other classes. They help ensure that all related classes follow certain rules.
 
-Think about your phone or computer:
-- You can play different types of files (music, videos, podcasts)
-- They all have play, pause, and stop buttons
-- But each type of file needs to be handled differently
-- Still, you want all your media players to work the same way
+- They contain **abstract methods**, which are like promises and must be defined in the classes that inherit from them.
+- You cannot create objects directly from an abstract class.
 
-This is perfect for learning about abstract classes because:
-- We need all players to have the same basic controls
-- Each type of player needs to work in its own special way
-- We want to make sure nobody forgets to add the important parts
+![abstract-class-image](../../.learn/assets/abstract-class-image-05.png)
 
-## What We'll Build 🛠️
+## Instructions
 
-1. First, we'll create a basic `MediaPlayer` blueprint that says:
-   - Every player MUST have play, pause, and stop
-   - Every player should show what it's doing
-   - Nobody can use this blueprint directly (it's just a guide!)
+1. Define an abstract class called `MediaPlayer`. Make sure to include abstract methods such as: `play`, `pause`, and `stop`.
 
-2. Then we'll make two real players:
-   - `AudioPlayer` for playing music and podcasts
-   - `VideoPlayer` for playing videos (with an extra display feature!)
+2. Define a class `AudioPlayer` that inherits from `MediaPlayer` and defines the required methods `play`, `pause`, and `stop`. This class will handle only audio files.
 
-3. Each player will:
-   - Handle its own type of media properly
-   - Tell us what it's doing
-   - Follow all the rules from the blueprint
+3. Define a class `VideoPlayer` that inherits from `MediaPlayer` and defines the required methods `play`, `pause`, and `stop`, but with an additional function called `show_video` to display the video while it plays.
 
-## 💡 Need Help?
+4. **Test your solution.** Create instances of the `AudioPlayer` and `VideoPlayer` classes and verify that they work correctly.
 
-- Use `ABC` and `abstractmethod` from Python's `abc` module
-- Abstract methods are like promises - "I'll define this later!"
-- Every player must have all the required methods
-- Think about what each type of player needs to do
-
-## Why Use Abstract Classes? 🤔
-
-Abstract classes are like a cooking recipe:
-1. The recipe tells you what ingredients you need
-2. But it doesn't cook the food for you
-3. You have to follow the recipe to make the dish
-4. Different cooks might do things slightly differently
-
-## What Should Happen? 🎯
-
-When you use your media players:
 ```python
+# Example Code
 audio = AudioPlayer("song.mp3")
-video = VideoPlayer("movie.mp4")
+video = VideoPlayer("video.mp4")
 
-# Play some music
-audio.play()    # Shows: "Playing audio: song.mp3"
-audio.pause()   # Shows: "Audio paused: song.mp3"
-audio.stop()    # Shows: "Audio stopped: song.mp3"
+audio.play()
+audio.pause()
+audio.stop()
 
-# Watch a video
-video.play()          # Shows: "Playing video: movie.mp4"
-video.display_video() # Shows: "Displaying video on screen: movie.mp4"
-video.stop()          # Shows: "Video stopped: movie.mp4"
-
-# This shouldn't work (good!)
-try:
-    player = MediaPlayer()  # This should give an error
-except TypeError as e:
-    print(str(e))
+video.play()
+video.show_video()
+video.stop()
 ```
 
-Think of it like building different remote controls - they all need certain buttons, but each one works a little differently for its specific device! 🎮
+## 💡 Tips
+
+- Use `ABC` and `abstractmethod` from Python's `abc` module.
+- Abstract methods are like promises, it's like saying "I'll define this later!"
+- Each player must have all the required methods `play`, `pause`, and `stop`.
+- Think about what each type of player needs to do.
