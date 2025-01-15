@@ -7,8 +7,8 @@ class Animal:
         print("Some generic sound")
 
 class Dog(Animal):
-    def make_sound(self):
-        print("Woof!")
+    def __init__(self, name, species):
+        super().__init__(name, species)
     
     def fetch(self):
         print(f"{self.name} is fetching the ball")

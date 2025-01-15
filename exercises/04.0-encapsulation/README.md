@@ -1,50 +1,57 @@
-# Making Our Code Safe and Organized! 🔒
+# Keeping Our Code Safe and Organized! 🔒
 
-Hey there! Let's talk about something called "encapsulation" - don't worry about the big word! Think of it like a protective container that keeps things safe and organized. 
+In this section, we will learn about something called **encapsulation**. Although it sounds complicated, it's like having a safe for your data!
 
-## What's This All About? 📦
+Let's see what it means in programming.
+
+## What is it about? 📦
 
 Imagine you have a piggy bank:
-- You can put money in through the slot (like a special method)
-- You can shake it to hear what's inside (like getting information)
-- But you can't directly grab the money inside (that's protection!)
 
-That's exactly what encapsulation does in programming - it helps us protect and organize our code!
+- You can put money through the slot (this is like adding information to the class).
+- You can use a code to get the amount of money inside (this would be querying the information in a controlled way).
+- But you can't directly grab the money inside the piggy bank because it's protected!
+
+That's what encapsulation does in programming: it organizes and "protects" the data so it doesn't get modified incorrectly.
+
+## Why do we need this? 🤔
+
+Think about your phone:
+- You don't need to know how it works inside to use it.
+- The operating system and functions are protected inside the casing, and you only interact with what is allowed.
+
+Similarly, encapsulation helps us:
+- Keep our code safe and avoid accidental errors.
+- Change how something works without affecting other parts of the code.
+- Keep the code organized and easy to understand.
 
 ## The Important Parts 🎯
 
-1. **Keeping Things Private**
-   - Some things are "private" (like your diary - only you can read it!)
-   - We use `__` before names to make them private (like `__secret_number`)
-   - Only special methods can access these private things
+1. **Making Data Private**
+   - Sometimes, we need the data of a class to be private, meaning only the class itself can modify it.
+   - In Python, we use `__` before names to do this, like `__balance` in a piggy bank.
+   - This helps us avoid other parts of the program from accidentally changing this data.
 
-2. **Protected Information**
-   - Some things are "protected" (like sharing secrets only with your best friends)
-   - We use `_` before names for these (like `_shared_info`)
-   - Other parts of our program can use these, but they should be careful!
+2. **Protected Data**
+   - Other data can be "protected," meaning it is available for other parts of the program to use, but only with caution.
+   - We use `_` before the name for these attributes, like `_secure_code`.
+   - They are more accessible than private data, but we still give them some protection to avoid uncontrolled access.
 
-3. **Safe Ways to Access Information**
-   - We create special methods to safely work with our private information
-   - It's like having a bank teller - you don't go into the vault yourself!
-   - These methods make sure nobody can break our code by accident
+3. **Safe Access to Data**
+   - We create *special methods* to access and modify private or protected data safely.
+   - It's like having a cashier instead of being able to open the safe yourself. The cashier allows you to access what you need without risking damage to the system.
 
-## Why Do We Need This? 🤔
+Here is an example of encapsulation in Python:
 
-Think about your phone:
-- You don't need to know how it works inside to use it
-- The important parts are protected inside the case
-- You use buttons and the screen to control it safely
+![oop-image-4.0](../../.learn/assets/opp-image-40.png)
 
-Similarly, encapsulation helps us:
-- Keep our code safe from accidents
-- Make it easier to change how things work without breaking other parts
-- Keep our program organized and tidy
+In this case, the attribute **__balance** is private and can only be modified through the deposit method. No one can change it directly from outside the class.
 
-## Python's Special Way 🐍
+## The Special Way of Python 🐍
 
-Python is friendly! It's like having an honor system:
-1. Python trusts us to use things responsibly
-2. The `__` and `_` are like "please don't touch" signs
-3. We follow these rules to be good programmers!
+In Python, it's important to know that encapsulation doesn't completely "block" the data, but it helps us organize and restrict access responsibly.
 
-In the next exercises, we'll practice these ideas with fun examples. Don't worry if it seems tricky at first - we'll take it step by step! 🌟
+1. We use `__` and `_` as warning signals not to access certain attributes directly.
+2. While Python doesn't prevent us from accessing these attributes, it's good practice to follow these conventions to make our code safer and more organized.
+
+Now, in the next exercises, we will practice these ideas with fun examples. We will do it step by step! 🌟

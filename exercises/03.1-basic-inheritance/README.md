@@ -1,50 +1,47 @@
-# Let's Create a Pet Family! 🐾
+# Creating a Pet Family! 🐾
 
-Hey! Remember how we talked about inheritance being like a family tree? Now we're going to create our own programming family with animals!
+Let's create our own programming family with animals. In this exercise, you will learn about inheritance in programming by creating a base class and a derived class. This will help you understand how classes can share and extend functionalities.
 
-## Why Are We Making This? 🐕
+## 📝 Instructions
 
-Think about pets:
-- All animals can make sounds and have names
-- But dogs are special - they can fetch things!
-- This is perfect for learning how inheritance works
+1. Define a base class called `Animal`.
 
-We'll create:
-1. A basic `Animal` class (like a parent)
-2. A special `Dog` class (like a child) that can do everything an animal can do, plus more!
+2. In its `__init__` method, define the following attributes: name, species.
 
-## What We'll Learn 📚
+3. Add a method called `make_sound` that prints a generic sound like: `"Some generic sound"`.
 
-- How to create a basic class that other classes can inherit from
-- How to make a new class that builds on the basic one
-- How to add special abilities to our new class
-- How to use features from the parent class
+4. Define a class `Dog` that inherits from `Animal`.
 
-## 📝 Your Task
-
-1. Create a base class called `Animal` that:
-   - Takes a name and species when created
-   - Can make a basic sound
-
-2. Create a `Dog` class that:
-   - Is a special type of Animal
-   - Makes a "Woof!" sound instead of the basic animal sound
-   - Can fetch things!
-
-## 💡 Need Help?
-
-- Use `class Dog(Animal):` to say that Dog is a type of Animal
-- Use `super().__init__()` to set up the Animal part of your Dog
-- When a dog makes a sound, it should override (replace) the animal sound
-- Add a new `fetch()` method that only dogs have
-
-## What Should Happen? 🎯
-
-When you run this code:
 ```python
-dog = Dog("Buddy", "Canine")
-dog.make_sound()  # Should print: "Woof!"
-dog.fetch()       # Should print: "Buddy is fetching the ball"
+class Dog(Animal):
+   pass
 ```
 
-Think of it like this: Just like how you can do everything your parents can do (like walk and talk) plus your own special things, a Dog can do everything an Animal can do plus its own special tricks! 🌟
+5. In the `__init__` method of `Dog`, use `super().__init__()` to call the constructor of `Animal`. Ensure that the **Dog** class also receives the parameters `name` and `species` and passes them to the base class constructor.
+
+```python
+# Derived class Dog
+class Dog(Animal):
+   def __init__(self, name, species):
+      super().__init__(name, species)  # Initialize the base class attributes
+```
+
+6. Override the `make_sound` method in the `Dog` class to print `"Woof!"` instead of the generic sound.
+
+7. Add a method called `fetch` to the `Dog` class that prints a message like `"<name> is fetching the ball"`.
+
+8. **Test your solution.** Create an instance of the `Dog` class called `my_dog` with:
+
+```bash
+name: "Buddy"
+species: "Canine"
+```
+
+9. Call the `make_sound` and `fetch` methods on `my_dog`.
+
+You should see on the screen:
+
+```bash
+Woof!
+Buddy is fetching the ball
+```

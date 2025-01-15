@@ -20,72 +20,46 @@ class MediaPlayer(ABC):
         """Stop the media playback"""
         pass
     
-    def display_status(self, status):
-        """Display the current playback status"""
-        print(f"{status}: {self.file_name}")
 
 class AudioPlayer(MediaPlayer):
     def __init__(self, file_name):
         super().__init__(file_name)
-        self.is_playing = False
     
     def play(self):
-        self.is_playing = True
-        self.display_status("Playing audio")
+        print("Playing audio")
     
     def pause(self):
-        if self.is_playing:
-            self.is_playing = False
-            self.display_status("Audio paused")
+        print("Audio paused")
     
     def stop(self):
-        self.is_playing = False
-        self.display_status("Audio stopped")
+        print("Audio stopped")
 
 class VideoPlayer(MediaPlayer):
     def __init__(self, file_name):
         super().__init__(file_name)
-        self.is_playing = False
-        self.display_active = False
     
     def play(self):
-        self.is_playing = True
-        self.display_active = True
-        self.display_status("Playing video")
+        print("Playing video")
     
     def pause(self):
-        if self.is_playing:
-            self.is_playing = False
-            self.display_status("Video paused")
+        print("Video paused")
     
     def stop(self):
-        self.is_playing = False
-        self.display_active = False
-        self.display_status("Video stopped")
+        print("Video stopped")
+
+    def show_video(self):
+        print(f"🎬 Displaying video on screen: {self.file_name}")
     
-    def display_video(self):
-        if self.display_active:
-            print(f"Displaying video on screen: {self.file_name}")
-        else:
-            print("Video display is not active")
 
 # Test code
 if __name__ == "__main__":
-    try:
-        # This should raise TypeError
-        player = MediaPlayer("test.mp3")
-    except TypeError as e:
-        print(str(e))
-    
     audio = AudioPlayer("song.mp3")
-    video = VideoPlayer("movie.mp4")
-    
-    # Test audio playback
+    video = VideoPlayer("video.mp4")
+
     audio.play()
     audio.pause()
     audio.stop()
-    
-    # Test video playback
+
     video.play()
-    video.display_video()
+    video.show_video()
     video.stop()
