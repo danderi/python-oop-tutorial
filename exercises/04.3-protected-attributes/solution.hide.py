@@ -9,7 +9,7 @@ class LibraryItem:
         """Protected method to update item availability"""
         self._is_available = is_available
     
-    def lend_item(self):
+    def check_out(self):
         """Public method to check out the item"""
         if self._is_available:
             self._update_availability(False)
@@ -39,7 +39,7 @@ class Book(LibraryItem):
 if __name__ == "__main__":
     book = Book("Python Programming", "John Smith", "123-456-789")
     print(book.display_info())
-    book.lend_item()
+    book.check_out()
     print(book.display_info())
     book.return_item()
     print(book.display_info())
