@@ -1,29 +1,43 @@
-import unittest
+import pytest
+from io import StringIO
+from unittest.mock import patch
 from app import Temperature
 
-class TestTemperature(unittest.TestCase):
-    def setUp(self):
-        self.temp = Temperature(25)
+@pytest.mark.it("Should verify that the properties 'celsius' and 'fahrenheit' are defined")
+def test_temperature_properties_exist():
+    temp = Temperature(0)  
+    assert isinstance(Temperature.celsius, property), "The 'celsius' property is not defined."
+    assert isinstance(Temperature.fahrenheit, property), "The 'fahrenheit' property is not defined."
 
-    def test_initial_celsius(self):
-        self.assertEqual(self.temp.celsius, 25)
+@pytest.mark.it("Should verify the functionality of the 'celsius' and 'fahrenheit' setters")
+def test_temperature_setters():
+    temp = Temperature(0)  
+    
+    temp.celsius = 100
+    assert temp.celsius == 100, f"Expected Celsius value 100, but got {temp.celsius}"
+    assert temp.fahrenheit == 212, f"Expected Fahrenheit value 212, but got {temp.fahrenheit}"
 
-    def test_initial_fahrenheit(self):
-        self.assertEqual(self.temp.fahrenheit, 77.0)
+    temp.fahrenheit = 32
+    assert temp.celsius == 0, f"Expected Celsius value 0, but got {temp.celsius}"
+    assert temp.fahrenheit == 32, f"Expected Fahrenheit value 32, but got {temp.fahrenheit}"
 
-    def test_set_celsius(self):
-        self.temp.celsius = 100
-        self.assertEqual(self.temp.celsius, 100)
-        self.assertEqual(self.temp.fahrenheit, 212.0)
 
-    def test_set_fahrenheit(self):
-        self.temp.fahrenheit = 32
-        self.assertEqual(self.temp.celsius, 0)
-        self.assertEqual(self.temp.fahrenheit, 32)
+@pytest.mark.it("Should correctly convert between Celsius and Fahrenheit")
+def test_temperature_conversion():
+    temp = Temperature(25)
+    
+    assert temp.celsius == 25, f"Expected Celsius value 25, but got {temp.celsius}"
+    assert temp.fahrenheit == 77, f"Expected Fahrenheit value 77, but got {temp.fahrenheit}"
 
-    def test_invalid_celsius(self):
-        with self.assertRaises(ValueError):
-            self.temp.celsius = -300
+    temp.fahrenheit = 100
+    assert temp.celsius == 37.77777777777778, f"Expected Celsius value 37.77777777777778, but got {temp.celsius}"
 
-if __name__ == "__main__":
-    unittest.main()
+@pytest.mark.it("Should handle setting impossible temperatures")
+def test_impossible_temperature():
+    temp = Temperature(25)
+    
+    with patch("sys.stdout", new_callable=StringIO) as mock_stdout:
+        temp.celsius = -300  
+        output = mock_stdout.getvalue().strip()
+        expected_output = "Temperature too low. Cannot be set."
+        assert output == expected_output, f"Expected error message '{expected_output}', but got '{output}'"

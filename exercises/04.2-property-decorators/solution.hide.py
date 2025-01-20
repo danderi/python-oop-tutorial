@@ -11,7 +11,7 @@ class Temperature:
         if value >= -273.15:
             self._celsius = value
         else:
-            raise ValueError("Temperature too low. Cannot be set.")
+            print("Temperature too low. Cannot be set.")
     
     @property
     def fahrenheit(self):
