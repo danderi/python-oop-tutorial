@@ -25,8 +25,11 @@ Este ejercicio es perfecto para aprender sobre atributos protegidos porque:
        self._is_available = is_available
 ```
 
-4. Define un método público lend_item que verifique si el ítem está disponible. Si está disponible, actualice el estado a "no disponible" utilizando `_update_availability`. Si no está disponible, imprima un mensaje indicando que ya está prestado.
+4. Define un método público `lend_item` que verifique si el ítem está disponible. Si está disponible, actualice el estado a "no disponible" utilizando `_update_availability`. Si no está disponible, imprima un mensaje indicando que ya está prestado. Ejemplo: 
 
+```python
+"{title} not available"
+```
 5. Define otro método público `return_item` que marque el ítem como disponible.
 
 6. Crea una clase `Book` que herede de `LibraryItem` y añade un atributo protegido `_isbn` en el constructor para almacenar el número ISBN del libro.
