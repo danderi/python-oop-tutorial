@@ -29,7 +29,9 @@ initial_balance: 1000
 account_number: "1234"
 ```
 
-4. Realiza algunas operaciones como: obtener el balance, deposita 500, retira 2000, luego intenta retirar 800 y vuelve a obtener tu balance.
+4. Realiza algunas operaciones ejecutando algunos metodos como: obtener el balance, deposita 500, retira 2000, luego intenta retirar 800 y vuelve a obtener tu balance.
+
+5. Imprime solo el resultado de tu método `.display_info()`
 
 Piénsalo como usar un cajero automático: puedes verificar tu saldo, poner dinero y sacar dinero, pero solo si sigues los pasos correctos. ¡Igual que un banco real mantiene tu dinero seguro! 🏦
 

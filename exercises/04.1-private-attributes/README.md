@@ -29,7 +29,9 @@ initial_balance: 1000
 account_number: "1234"
 ```
 
-4. Perform some operations like: get the balance, deposit 500, withdraw 2000, then try to withdraw 800 and get your balance again.
+4. Perform some operations by executing methods such as: get the balance, deposit 500, withdraw 2000, then try to withdraw 800 and get your balance again.
+
+5. Print only the result of your `.display_info()` method.
 
 Think of it like using an ATM: you can check your balance, put money in, and take money out, but only if you follow the correct steps. Just like a real bank keeps your money safe! 🏦
 
