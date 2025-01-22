@@ -12,10 +12,10 @@ class LibraryItem:
     def check_out(self):
         """Public method to check out the item"""
         if self._is_available:
-            self._update_availability(False)
-            print(f"'{self._title}' has been lent out.")
+            self._update_availability(False)  # Change to "not available"
+            print(f"{self._title} has been checked out.")
         else:
-            print(f"'{self._title}' is already lent out.")
+            print(f"{self._title} not available")
 
     
     def return_item(self):
@@ -37,7 +37,7 @@ class Book(LibraryItem):
 
 # Test code
 if __name__ == "__main__":
-    book = Book("Python Programming", "John Smith", "123-456-789")
+    book = Book("Harry Potter", "J.K. Rowling", "123456789")
     print(book.display_info())
     book.check_out()
     print(book.display_info())
