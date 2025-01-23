@@ -11,17 +11,34 @@ Antes de iniciar recordemos que las **clases abstractas** son plantillas para ot
 
 ## Instrucciones
 
-1. Define una clase abstracta llamada `MediaPlayer`. Asegúrate de incluir métodos abstractos como: `play`, `pause` y 
-`stop`.
+1. Crea una clase llamada `MediaPlayer`. Esta clase debe ser abstracta, lo que significa que no se puede usar directamente. Dentro de esta clase, define métodos abstractos llamados: `play`, `pause` y `stop`. Estos métodos no tendrán contenido, solo los nombres.
 
-2. Define una clase `AudioPlayer` que herede de `MediaPlayer` y defina los métodos requeridos `play`, `pause`, 
-`stop`. Esta clase manejará solo archivos de audio.
+2. Crea una clase llamada `AudioPlayer` que herede de `MediaPlayer`. Esto significa que AudioPlayer usará los métodos de MediaPlayer. En AudioPlayer, define los métodos `play`, `pause`, `stop` con contenido. Esta clase solo manejará archivos de audio. Ejemplo:
 
-3. Define una clase `VideoPlayer` que herede de `MediaPlayer` y defina los métodos requeridos `play`, `pause`, 
-`stop`, pero con una función adicional llamada `show_video` para mostrar el video mientras se reproduce.
+```python
+class AudioPlayer(MediaPlayer):
+    def __init__(self, file_name):
+        super().__init__(file_name)
+    
+    def play(self):
+        print("Playing audio")
+    
+    def pause(self):
+        print("Audio paused")
+    
+    def stop(self):
+        print("Audio stopped")
+```
 
+3. Crea una clase llamada `VideoPlayer` que también herede de MediaPlayer. En VideoPlayer, define los métodos `play`, `pause`, `stop` con contenido, igual que en AudioPlayer. 
 
-4. **Prueba tu solución.** Crea instancias de la clase `AudioPlayer` y `VideoPlaye` y verifica que funcionen correctamente.
+4. Adicionalmente, agrega un método llamado `show_video` a la clase `VideoPlayer` que mostrará un print() con un mensaje del video mientras se reproduce. Ejemplo:
+
+```python
+"Displaying video on screen: {file_name}"
+```
+
+5. **Prueba tu solución.** Crea instancias de la clase `AudioPlayer` y `VideoPlayer` y verifica que funcionen correctamente.
 
 ```python
 # Example Code

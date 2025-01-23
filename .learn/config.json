@@ -1,0 +1,605 @@
+{
+    "config": {
+        "port": 3000,
+        "os": "linux",
+        "editor": {
+            "mode": "extension",
+            "agent": "vscode",
+            "version": "5.0"
+        },
+        "dirPath": "./.learn",
+        "configPath": "learn.json",
+        "outputPath": ".learn/dist",
+        "publicPath": "/preview",
+        "publicUrl": "https://symmetrical-trout-5xg9v6997g53pgjv-3000.app.github.dev",
+        "contact": "https://github.com/learnpack/learnpack/issues/new",
+        "language": "auto",
+        "autoPlay": true,
+        "projectType": "tutorial",
+        "grading": "isolated",
+        "exercisesPath": "./exercises",
+        "webpackTemplate": null,
+        "disableGrading": false,
+        "disabledActions": [],
+        "actions": [],
+        "entries": {
+            "html": "index.html",
+            "vanillajs": "index.js",
+            "react": "app.jsx",
+            "node": "app.js",
+            "python3": "app.py",
+            "java": "app.java"
+        },
+        "suggestions": {
+            "agent": null
+        },
+        "warnings": {
+            "agent": null
+        },
+        "title": {
+            "en": "Learn Object Oriented Programming with Python",
+            "es": "Aprende Programación Orientada a Objetos con Python"
+        },
+        "slug": "python-oop-tutorial",
+        "repository": "https://github.com/4GeeksAcademy/python-oop-tutorial",
+        "preview": "https://github.com/4GeeksAcademy/python-oop-tutorial/blob/main/preview.gif?raw=true",
+        "description": {
+            "en": "Learn Object Oriented Programming concepts using Python, from basic to advanced topics",
+            "es": "Aprende conceptos de Programación Orientada a Objetos usando Python, desde temas básicos hasta avanzados"
+        },
+        "duration": 6,
+        "difficulty": "easy",
+        "videoSolutions": false,
+        "bugsLink": "https://github.com/learnpack/learnpack/issues/new",
+        "graded": true,
+        "translations": []
+    },
+    "address": "https://symmetrical-trout-5xg9v6997g53pgjv.github.dev",
+    "currentExercise": null,
+    "exercises": [
+        {
+            "position": 0,
+            "path": "exercises/01.0-introduction-to-oop",
+            "slug": "01.0-introduction-to-oop",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": null,
+            "entry": null,
+            "title": "01.0-introduction-to-oop",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/01.0-introduction-to-oop/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/01.0-introduction-to-oop/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 1,
+            "path": "exercises/01.1-first-class",
+            "slug": "01.1-first-class",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": "python3",
+            "entry": "exercises/01.1-first-class/app.py",
+            "title": "01.1-first-class",
+            "graded": true,
+            "files": [
+                {
+                    "path": "exercises/01.1-first-class/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/01.1-first-class/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/01.1-first-class/app.py",
+                    "name": "app.py",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/01.1-first-class/solution.hide.py",
+                    "name": "solution.hide.py",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/01.1-first-class/test.py",
+                    "name": "test.py",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 2,
+            "path": "exercises/02.0-attributes-and-methods",
+            "slug": "02.0-attributes-and-methods",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": null,
+            "entry": null,
+            "title": "02.0-attributes-and-methods",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/02.0-attributes-and-methods/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02.0-attributes-and-methods/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 3,
+            "path": "exercises/02.1-adding-attributes",
+            "slug": "02.1-adding-attributes",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": "python3",
+            "entry": "exercises/02.1-adding-attributes/app.py",
+            "title": "02.1-adding-attributes",
+            "graded": true,
+            "files": [
+                {
+                    "path": "exercises/02.1-adding-attributes/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02.1-adding-attributes/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02.1-adding-attributes/app.py",
+                    "name": "app.py",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/02.1-adding-attributes/solution.hide.py",
+                    "name": "solution.hide.py",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02.1-adding-attributes/test.py",
+                    "name": "test.py",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 4,
+            "path": "exercises/03.0-inheritance",
+            "slug": "03.0-inheritance",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": null,
+            "entry": null,
+            "title": "03.0-inheritance",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/03.0-inheritance/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/03.0-inheritance/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 5,
+            "path": "exercises/03.1-basic-inheritance",
+            "slug": "03.1-basic-inheritance",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": "python3",
+            "entry": "exercises/03.1-basic-inheritance/app.py",
+            "title": "03.1-basic-inheritance",
+            "graded": true,
+            "files": [
+                {
+                    "path": "exercises/03.1-basic-inheritance/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/03.1-basic-inheritance/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/03.1-basic-inheritance/app.py",
+                    "name": "app.py",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/03.1-basic-inheritance/solution.hide.py",
+                    "name": "solution.hide.py",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/03.1-basic-inheritance/test.py",
+                    "name": "test.py",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 6,
+            "path": "exercises/03.2-multiple-inheritance",
+            "slug": "03.2-multiple-inheritance",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": "python3",
+            "entry": "exercises/03.2-multiple-inheritance/app.py",
+            "title": "03.2-multiple-inheritance",
+            "graded": true,
+            "files": [
+                {
+                    "path": "exercises/03.2-multiple-inheritance/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/03.2-multiple-inheritance/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/03.2-multiple-inheritance/app.py",
+                    "name": "app.py",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/03.2-multiple-inheritance/solution.hide.py",
+                    "name": "solution.hide.py",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/03.2-multiple-inheritance/test.py",
+                    "name": "test.py",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 7,
+            "path": "exercises/04.0-encapsulation",
+            "slug": "04.0-encapsulation",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": null,
+            "entry": null,
+            "title": "04.0-encapsulation",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/04.0-encapsulation/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/04.0-encapsulation/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 8,
+            "path": "exercises/04.1-private-attributes",
+            "slug": "04.1-private-attributes",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": "python3",
+            "entry": "exercises/04.1-private-attributes/app.py",
+            "title": "04.1-private-attributes",
+            "graded": true,
+            "files": [
+                {
+                    "path": "exercises/04.1-private-attributes/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/04.1-private-attributes/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/04.1-private-attributes/app.py",
+                    "name": "app.py",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/04.1-private-attributes/solution.hide.py",
+                    "name": "solution.hide.py",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/04.1-private-attributes/test.py",
+                    "name": "test.py",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 9,
+            "path": "exercises/04.2-property-decorators",
+            "slug": "04.2-property-decorators",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": "python3",
+            "entry": "exercises/04.2-property-decorators/app.py",
+            "title": "04.2-property-decorators",
+            "graded": true,
+            "files": [
+                {
+                    "path": "exercises/04.2-property-decorators/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/04.2-property-decorators/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/04.2-property-decorators/app.py",
+                    "name": "app.py",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/04.2-property-decorators/solution.hide.py",
+                    "name": "solution.hide.py",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/04.2-property-decorators/test.py",
+                    "name": "test.py",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 10,
+            "path": "exercises/04.3-protected-attributes",
+            "slug": "04.3-protected-attributes",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": "python3",
+            "entry": "exercises/04.3-protected-attributes/app.py",
+            "title": "04.3-protected-attributes",
+            "graded": true,
+            "files": [
+                {
+                    "path": "exercises/04.3-protected-attributes/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/04.3-protected-attributes/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/04.3-protected-attributes/app.py",
+                    "name": "app.py",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/04.3-protected-attributes/solution.hide.py",
+                    "name": "solution.hide.py",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/04.3-protected-attributes/test.py",
+                    "name": "test.py",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 11,
+            "path": "exercises/05.0-polymorphism",
+            "slug": "05.0-polymorphism",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": null,
+            "entry": null,
+            "title": "05.0-polymorphism",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/05.0-polymorphism/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/05.0-polymorphism/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 12,
+            "path": "exercises/05.1-method-overriding",
+            "slug": "05.1-method-overriding",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": "python3",
+            "entry": "exercises/05.1-method-overriding/app.py",
+            "title": "05.1-method-overriding",
+            "graded": true,
+            "files": [
+                {
+                    "path": "exercises/05.1-method-overriding/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/05.1-method-overriding/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/05.1-method-overriding/app.py",
+                    "name": "app.py",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/05.1-method-overriding/solution.hide.py",
+                    "name": "solution.hide.py",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/05.1-method-overriding/test.py",
+                    "name": "test.py",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 13,
+            "path": "exercises/05.2-abstract-classes",
+            "slug": "05.2-abstract-classes",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": "python3",
+            "entry": "exercises/05.2-abstract-classes/app.py",
+            "title": "05.2-abstract-classes",
+            "graded": true,
+            "files": [
+                {
+                    "path": "exercises/05.2-abstract-classes/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/05.2-abstract-classes/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/05.2-abstract-classes/app.py",
+                    "name": "app.py",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/05.2-abstract-classes/solution.hide.py",
+                    "name": "solution.hide.py",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/05.2-abstract-classes/test.py",
+                    "name": "test.py",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 14,
+            "path": "exercises/05.3-duck-typing",
+            "slug": "05.3-duck-typing",
+            "translations": {
+                "es": "README.es.md",
+                "us": "README.md"
+            },
+            "language": "python3",
+            "entry": "exercises/05.3-duck-typing/app.py",
+            "title": "05.3-duck-typing",
+            "graded": true,
+            "files": [
+                {
+                    "path": "exercises/05.3-duck-typing/README.es.md",
+                    "name": "README.es.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/05.3-duck-typing/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/05.3-duck-typing/app.py",
+                    "name": "app.py",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/05.3-duck-typing/solution.hide.py",
+                    "name": "solution.hide.py",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/05.3-duck-typing/test.py",
+                    "name": "test.py",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        }
+    ],
+    "bugsLink": null,
+    "videoSolutions": false,
+    "localhostOnly": false,
+    "session": 8248448698154169000
+}
