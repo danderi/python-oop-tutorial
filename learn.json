@@ -10,6 +10,8 @@
         "en": "Learn Object Oriented Programming concepts using Python, from basic to advanced topics",
         "es": "Aprende conceptos de Programación Orientada a Objetos usando Python, desde temas básicos hasta avanzados"
     },
+    "language": "python3",
+    "projectType": "tutorial",
     "technologies": ["python", "object-oriented-programing", "oop", "programacion-orientada-a-objetos", "poo"],
     "duration": 6,
     "difficulty": "easy",
