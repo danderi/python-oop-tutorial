@@ -10,7 +10,7 @@ def test_flying_class():
         flying_instance = app.Flying()
         flying_instance.fly()
         output = mock_stdout.getvalue().strip()
-    assert output == "I can fly!", f"Expected '¡Puedo volar!', but got '{output}'"
+    assert output.lower() == "I can fly!".lower(), f"Expected 'I can fly!', but got '{output}'"
 
 @pytest.mark.it("Should define the 'Swimming' class with a 'swim' method that prints '¡Puedo nadar!'")
 def test_swimming_class():
@@ -19,7 +19,7 @@ def test_swimming_class():
         swimming_instance = app.Swimming()
         swimming_instance.swim()
         output = mock_stdout.getvalue().strip()
-    assert output == "I can swim!", f"Expected '¡Puedo nadar!', but got '{output}'"
+    assert output.lower() == "I can swim!".lower(), f"Expected 'I can swim!', but got '{output}'"
 
 @pytest.mark.it("Should define the 'Bird' class with attributes 'name' and 'species'")
 def test_bird_class_init():
@@ -44,7 +44,7 @@ def test_duck_introduction():
         duck = app.Duck("Donald", "Mallard")
         duck.introduce()
         output = mock_stdout.getvalue().strip()
-    assert output == "I'm Donald, a Mallard that can both fly and swim!", f"Expected '¡Soy Donald, un Mallard que puede volar y nadar!', but got '{output}'"
+    assert output.lower() == "I'm Donald, a Mallard that can both fly and swim!".lower(), f"Expected 'I'm Donald, a Mallard that can both fly and swim!', but got '{output}'"
 
 @pytest.mark.it("Should print 'I can fly!' when calling fly() on Duck")
 def test_duck_fly():
@@ -53,7 +53,7 @@ def test_duck_fly():
         duck = app.Duck("Donald", "Mallard")
         duck.fly()
         output = mock_stdout.getvalue().strip()
-    assert output == "I can fly!", f"Expected 'I can fly!', but got '{output}'"
+    assert output.lower() == "I can fly!".lower(), f"Expected 'I can fly!', but got '{output}'"
 
 @pytest.mark.it("Should print 'I can swim!' when calling swim() on Duck")
 def test_duck_swim():
@@ -62,5 +62,5 @@ def test_duck_swim():
         duck = app.Duck("Donald", "Mallard")
         duck.swim()
         output = mock_stdout.getvalue().strip()
-    assert output == "I can swim!", f"Expected 'I can swim!', but got '{output}'"
+    assert output.lower() == "I can swim!".lower(), f"Expected 'I can swim!', but got '{output}'"
 

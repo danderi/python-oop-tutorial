@@ -33,7 +33,7 @@ def test_video_player():
 
 
 @pytest.mark.it("Should verify that the object audio and video are instances of AudioPlayer and VideoPlayer respectively")
-def test_constants_declared():
+def test_objects_instances():
         import app  
         assert hasattr(app, 'audio'), "The variable 'audio' is not defined in app.py."
         assert hasattr(app, 'video'), "The variable 'video' is not defined in app.py."

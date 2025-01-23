@@ -1,8 +1,3 @@
-import json
-import csv
-import xml.etree.ElementTree as ET
-from io import StringIO
-
 class DataManager:
     """Class that works with any data processor through duck typing"""
     def __init__(self, processor):

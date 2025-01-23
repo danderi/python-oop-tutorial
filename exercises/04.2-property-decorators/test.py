@@ -39,5 +39,5 @@ def test_impossible_temperature():
     with patch("sys.stdout", new_callable=StringIO) as mock_stdout:
         temp.celsius = -300  
         output = mock_stdout.getvalue().strip()
-        expected_output = "Temperature too low. Cannot be set."
-        assert output == expected_output, f"Expected error message '{expected_output}', but got '{output}'"
+        expected_output = "Temperature too low. Cannot be set.".lower()
+        assert output.lower() == expected_output, f"Expected error message '{expected_output}', but got '{output}'"

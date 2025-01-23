@@ -33,7 +33,14 @@ class JsonProcessor:
 - process: para procesarlos.
 - export: para exportarlos.
 
-Al DataManager no deberia importarle qué procesador recibe, solo usa cualquier procesador que le des.
+A la clase `DataManager` no deberia importarle qué procesador recibe, solo usa cualquier procesador que le des. Ejemplo:
+
+```python
+def process_data(self, data):
+        self.processor.load_data(data)
+        self.processor.process()
+        return self.processor.export()
+```
 
 3. **Prueba tu solución.** Crea instancias de la clase `JsonProcessor, CsvProcessor, XmlProcessor` y verifica que funcionen correctamente.
 
@@ -50,16 +57,16 @@ csv_data = 'name,age\nJohn,30'
 xml_data = '<person><name>John</name><age>30</age></person>'
 
 # JSON Processor
-manager = DataManager(json_proc)
-print(manager.process_data(json_data))  # Process and display results for JSON
+manager_json = DataManager(json_proc)
+print(manager_json.process_data(json_data))  # Process and display results for JSON
 
 # CSV Processor
-manager = DataManager(csv_proc)
-print(manager.process_data(csv_data))  # Process and display results for CSV
+manager_csv = DataManager(csv_proc)
+print(manager_json.process_data(csv_data))  # Process and display results for CSV
 
 # XML Processor
-manager = DataManager(xml_proc)
-print(manager.process_data(xml_data))  # Process and display results for XML
+manager_xml = DataManager(xml_proc)
+print(manager_json.process_data(xml_data))  # Process and display results for XML
 ```
 
 ## 💡 Consejos

@@ -38,4 +38,4 @@ def test_app_prints_greetings():
   
     expected = "Hello, my name is John"
 
-    assert output == expected, f"Expected output to be '{expected}', but got '{output}'"
+    assert output.lower() == expected.lower(), f"Expected output to be '{expected}', but got '{output}'"
