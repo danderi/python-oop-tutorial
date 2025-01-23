@@ -21,9 +21,9 @@ specie: "Mallard"
 Al ejecutar el código de prueba debería imprimir:
 
 ```python
-"¡Soy Donald, un Mallard que puede volar y nadar!"
-"¡Puedo volar!"
-"¡Puedo nadar!"
+"I'm Donald, a Mallard that can both fly and swim!"
+"I can fly!"
+"I can swim!"
 ```
 
 ## 💡 Consejos

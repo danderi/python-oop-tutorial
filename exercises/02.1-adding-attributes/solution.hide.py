@@ -9,8 +9,8 @@ class Student:
     def student_info(self):
         return f"{self.name} is {self.age} years old in {self.grade} grade at {self.school_name}"
 
-# Test code
-if __name__ == "__main__":
-    student = Student("Alice", 15, "10th")
-    print(Student.school_name)
-    print(student.student_info())
+
+student1 = Student("Alice", 15, "10th")
+student2 = Student("Bob", 16, "11th")  
+print(student1.student_info())
+print(student2.student_info())

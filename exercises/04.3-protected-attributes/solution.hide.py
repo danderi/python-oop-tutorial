@@ -3,25 +3,25 @@ class LibraryItem:
     def __init__(self, title, author):
         self._title = title
         self._author = author
-        self._available = True
+        self._is_available = True
     
-    def _update_availability(self, status):
+    def _update_availability(self, is_available):
         """Protected method to update item availability"""
-        self._available = status
+        self._is_available = is_available
     
     def check_out(self):
         """Public method to check out the item"""
-        if self._available:
-            self._update_availability(False)
-            return True
-        return False
+        if self._is_available:
+            self._update_availability(False)  # Change to "not available"
+            print(f"{self._title} has been checked out.")
+        else:
+            print(f"{self._title} not available")
+
     
     def return_item(self):
         """Public method to return the item"""
-        if not self._available:
-            self._update_availability(True)
-            return True
-        return False
+        self._update_availability(True)
+        print(f"'{self._title}' has been returned.")
 
 
 class Book(LibraryItem):
@@ -32,12 +32,12 @@ class Book(LibraryItem):
     
     def display_info(self):
         """Display all book information including protected attributes"""
-        return f"Book: {self._title} by {self._author} (ISBN: {self._isbn}) - Available: {self._available}"
+        return f"Book: {self._title} by {self._author} (ISBN: {self._isbn}) - Available: {self._is_available}"
 
 
 # Test code
 if __name__ == "__main__":
-    book = Book("Python Programming", "John Smith", "123-456-789")
+    book = Book("Harry Potter", "J.K. Rowling", "123456789")
     print(book.display_info())
     book.check_out()
     print(book.display_info())

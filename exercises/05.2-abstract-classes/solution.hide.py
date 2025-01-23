@@ -48,7 +48,7 @@ class VideoPlayer(MediaPlayer):
         print("Video stopped")
 
     def show_video(self):
-        print(f"🎬 Displaying video on screen: {self.file_name}")
+        print(f"Displaying video on screen: {self.file_name}")
     
 
 # Test code

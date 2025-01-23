@@ -9,6 +9,8 @@ class Animal:
 class Dog(Animal):
     def __init__(self, name, species):
         super().__init__(name, species)
+    def make_sound(self):
+        print("Woof!")
     
     def fetch(self):
         print(f"{self.name} is fetching the ball")

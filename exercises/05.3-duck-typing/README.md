@@ -27,13 +27,20 @@ class JsonProcessor:
       return f"Exporting JSON data: {self.data}"
 ```
 
-2. Then define a `DataManager` class that has a `process_data(data)` method and works with any processor that has the methods:
+2. Then define a class `DataManager` that has a method `process_data(data)` and works with any processor that has the following methods:
 
 - load_data: to load data.
 - process: to process it.
 - export: to export it.
 
-The DataManager should not care which processor it receives, just use any processor you give it.
+The `DataManager` class should not care which processor it receives, it just uses any processor you give it. Example:
+
+```python
+def process_data(self, data):
+   self.processor.load_data(data)
+   self.processor.process()
+   return self.processor.export()
+```
 
 3. **Test your solution.** Create instances of the `JsonProcessor, CsvProcessor, XmlProcessor` classes and verify that they work correctly.
 
@@ -49,16 +56,16 @@ csv_data = 'name,age\nJohn,30'
 xml_data = '<person><name>John</name><age>30</age></person>'
 
 # JSON Processor
-manager = DataManager(json_proc)
-print(manager.process_data(json_data))  # Process and display results for JSON
+manager_json = DataManager(json_proc)
+print(manager_json.process_data(json_data))  # Process and display results for JSON
 
 # CSV Processor
-manager = DataManager(csv_proc)
-print(manager.process_data(csv_data))  # Process and display results for CSV
+manager_csv = DataManager(csv_proc)
+print(manager_json.process_data(csv_data))  # Process and display results for CSV
 
 # XML Processor
-manager = DataManager(xml_proc)
-print(manager.process_data(xml_data))  # Process and display results for XML
+manager_xml = DataManager(xml_proc)
+print(manager_json.process_data(xml_data))  # Process and display results for XML
 ```
 
 ## 💡 Tips

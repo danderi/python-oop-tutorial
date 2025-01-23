@@ -6,18 +6,42 @@ En este ejercicio, las formas (círculo, rectángulo, triángulo) comparten mét
 
 ## 📝 Instrucciones
 
-1. Crea la clase Base `Forma`. La clase **Forma** actuará como una plantilla para otras formas. Contendrá métodos que serán sobrescritos por las formas específicas.
+1. Crea la clase Base `Shape`. Esta clase actuará como una molde para otras formas, no tiene detalles específicos solo métodos básicos que puedes usar o reemplazar más adelante.
 
-2. Incluye los métodos.
-    - **area:** Devuelve 0 por defecto.
-    - **perimeter:** Devuelve 0 por defecto.
-    - **describe:** Retorna un mensaje genérico como: `Generic shape`
+2. Agrega estos métodos a `Shape`:
+    - **area:** Este método devolverá siempre 0. Por ahora, no calcula nada.
+    - **perimeter:** Igual que area, este método devolverá 0.
+    - **describe:** Este método simplemente retornará el texto `Generic shape`
 
-3. Crea la clases derivada `Circle`. Esta clase necesita un atributo `radius`. 
-4. Crea la clases derivada `Rectangle`. Esta clase necesita los atributos `width` y `height`. 
-5. Crea la clases derivada `Triangle`. Esta clase necesita los atributos `side1`, `side2`, `side3`, `height`. 
+3. Crea la clase llamada `Circle`. Esta clase necesita un atributo `radius`, el cual será el tamaño del círculo. Ejemplo:
+
+```python
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+    
+     def area(self):
+        return 0
+    
+    def perimeter(self):
+        return 0
+    
+    def describe(self):
+        return "Generic shape"
+```
+
+4. Tal y como hicimos en el paso anterior crea la clase `Rectangle`. Esta clase necesita los atributos `width` y `height`, estos serán las dimensiones del rectángulo. 
+
+5. Crea la clase `Triangle`. Esta clase necesita los atributos `side1`, `side2`, `side3` (los tres lados del triángulo) y `height` (la altura para calcular el área). 
+
 6. **Métodos sobrescritos.** Sobrescribe los métodos de `area, perimeter y describe` e implementa las fórmulas específicas para calcular area y perimeter, y ajusta el metodo describe para cada forma.
-7. Crea instancias de cada forma y verifica que los métodos funcionen correctamente. Por ejemplo:
+
+- `area`: Calcula el área según las fórmulas específicas de la forma (por ejemplo, para un círculo es π*r² que traducido a lenguaje de programación seria `pi * self.radius ** 2`).
+- `perimeter`: Calcula el perímetro según la forma.
+- `describe`: Devuelve una descripción personalizada para cada forma.
+
+7. **Prueba tu codigo**. Crea un círculo, un rectángulo y un triángulo usando las clases que acabas de hacer.
+Verifica que los métodos funcionen correctamente llamándolos. Por ejemplo:
 
 ```python
 circle = Circle(5)

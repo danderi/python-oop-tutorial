@@ -21,8 +21,8 @@ Ejemplo:
 5. Instancia de la clase Student 2 nuevos objetos con los siguientes valores:
 
 ```python
-estudiante1 = Student("Alice", 15, "10th")  
-estudiante2 = Student("Bob", 16, "11th")  
+student1 = Student("Alice", 15, "10th")  
+student2 = Student("Bob", 16, "11th")  
 ```
 
 6. Imprime la información de cada estudiante llamando el metodo `student_info`

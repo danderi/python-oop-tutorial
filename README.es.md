@@ -35,7 +35,7 @@ Al completar este tutorial, entenderás:
 
 1. Primero, asegúrate de tener instalado LearnPack CLI:
 ```bash
-$ npm install @learnpack/learnpack-cli -g
+$ npm install @learnpack/learnpack -g
 ```
 
 2. Clona este repositorio:
@@ -44,12 +44,7 @@ $ git clone https://github.com/4GeeksAcademy/python-oop-tutorial
 $ cd python-oop-tutorial
 ```
 
-3. Instala los ejercicios:
-```bash
-$ learnpack install
-```
-
-4. Inicia el tutorial:
+3. Inicia el tutorial:
 ```bash
 $ learnpack start
 ```

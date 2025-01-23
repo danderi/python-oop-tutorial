@@ -6,18 +6,42 @@ In this exercise, the shapes (circle, rectangle, triangle) share common methods 
 
 ## 📝 Instructions
 
-1. Create the base class `Shape`. The **Shape** class will act as a template for other shapes. It will contain methods that will be overridden by specific shapes.
+1. Create the base class `Shape`. This class will act as a template for other shapes, it doesn't have specific details, just basic methods that you can use or override later.
 
-2. Include the methods:
-   - **area:** Returns 0 by default.
-   - **perimeter:** Returns 0 by default.
-   - **describe:** Returns a generic message like: `Generic shape`
+2. Add these methods to `Shape`:
+   - **area:** This method will always return 0. For now, it doesn't calculate anything.
+   - **perimeter:** Same as area, this method will return 0.
+   - **describe:** This method will simply return the text `Generic shape`.
 
-3. Create the derived class `Circle`. This class needs an attribute `radius`.
-4. Create the derived class `Rectangle`. This class needs the attributes `width` and `height`.
-5. Create the derived class `Triangle`. This class needs the attributes `side1`, `side2`, `side3`, `height`.
-6. **Overridden methods.** Override the methods `area, perimeter, and describe` and implement the specific formulas to calculate area and perimeter, and adjust the describe method for each shape.
-7. Create instances of each shape and verify that the methods work correctly. For example:
+3. Create a class called `Circle`. This class needs an attribute `radius`, which will be the size of the circle. Example:
+
+```python
+class Circle(Shape):
+   def __init__(self, radius):
+      self.radius = radius
+   
+   def area(self):
+      return 0
+   
+   def perimeter(self):
+      return 0
+   
+   def describe(self):
+      return "Generic shape"
+```
+
+4. Just like we did in the previous step, create the class `Rectangle`. This class needs the attributes `width` and `height`, which will be the dimensions of the rectangle.
+
+5. Create the class `Triangle`. This class needs the attributes `side1`, `side2`, `side3` (the three sides of the triangle) and `height` (the height to calculate the area).
+
+6. **Overridden methods.** Override the methods `area`, `perimeter`, and `describe` and implement the specific formulas to calculate area and perimeter, and adjust the describe method for each shape.
+
+- `area`: Calculate the area according to the specific formulas of the shape (for example, for a circle it is π*r² which translated to programming language would be `pi * self.radius ** 2`).
+- `perimeter`: Calculate the perimeter according to the shape.
+- `describe`: Return a custom description for each shape.
+
+7. **Test your code**. Create a circle, a rectangle, and a triangle using the classes you just made.
+Verify that the methods work correctly by calling them. For example:
 
 ```python
 circle = Circle(5)

@@ -35,7 +35,7 @@ Found a bug? Report it [here](https://github.com/learnpack/learnpack/issues/new)
 
 1. First, make sure you have LearnPack CLI installed:
 ```bash
-$ npm install @learnpack/learnpack-cli -g
+$ npm install @learnpack/learnpack -g
 ```
 
 2. Clone this repository:
@@ -44,12 +44,7 @@ $ git clone https://github.com/4GeeksAcademy/python-oop-tutorial
 $ cd python-oop-tutorial
 ```
 
-3. Install the exercises:
-```bash
-$ learnpack install
-```
-
-4. Start the tutorial:
+3. Start the tutorial:
 ```bash
 $ learnpack start
 ```

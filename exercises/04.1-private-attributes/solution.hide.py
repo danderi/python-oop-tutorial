@@ -24,8 +24,9 @@ class BankAccount:
 # Test code
 if __name__ == "__main__":
     account = BankAccount(1000, "1234")
-    print(account.get_balance())  # 1000
-    print(account.deposit(500))   # True
-    print(account.withdraw(2000)) # False
-    print(account.withdraw(800))  # True
-    print(account.get_balance())  # 700
+    account.get_balance()  # 1000
+    account.deposit(500)   # True
+    account.withdraw(2000) # False
+    account.withdraw(800)  # True
+    account.get_balance()  # 700
+    print(account.display_info())

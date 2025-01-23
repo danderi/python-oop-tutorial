@@ -11,13 +11,34 @@ Before we start, let's remember that **abstract classes** are templates for othe
 
 ## Instructions
 
-1. Define an abstract class called `MediaPlayer`. Make sure to include abstract methods such as: `play`, `pause`, and `stop`.
+1. Create a class called `MediaPlayer`. This class should be abstract, meaning it cannot be used directly. Within this class, define abstract methods called: `play`, `pause`, and `stop`. These methods will not have content, only the names.
 
-2. Define a class `AudioPlayer` that inherits from `MediaPlayer` and defines the required methods `play`, `pause`, and `stop`. This class will handle only audio files.
+2. Create a class called `AudioPlayer` that inherits from `MediaPlayer`. This means that `AudioPlayer` will use the methods from `MediaPlayer`. In `AudioPlayer`, define the methods `play`, `pause`, and `stop` with content. This class will only handle audio files. Example:
 
-3. Define a class `VideoPlayer` that inherits from `MediaPlayer` and defines the required methods `play`, `pause`, and `stop`, but with an additional function called `show_video` to display the video while it plays.
+```python
+class AudioPlayer(MediaPlayer):
+    def __init__(self, file_name):
+        super().__init__(file_name)
+    
+    def play(self):
+        print("Playing audio")
+    
+    def pause(self):
+        print("Audio paused")
+    
+    def stop(self):
+        print("Audio stopped")
+```
 
-4. **Test your solution.** Create instances of the `AudioPlayer` and `VideoPlayer` classes and verify that they work correctly.
+3. Create a class called `VideoPlayer` that also inherits from `MediaPlayer`. In `VideoPlayer`, define the methods `play`, `pause`, and `stop` with content, just like in `AudioPlayer`.
+
+4. Additionally, add a method called `show_video` to the `VideoPlayer` class that will print a message of the video while it is playing. Example:
+
+```python
+"Displaying video on screen: {file_name}"
+```
+
+5. **Test your solution.** Create instances of the `AudioPlayer` and `VideoPlayer` classes and verify that they work correctly.
 
 ```python
 # Example Code
@@ -32,6 +53,7 @@ video.play()
 video.show_video()
 video.stop()
 ```
+
 
 ## 💡 Tips
 
