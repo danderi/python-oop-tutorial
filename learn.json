@@ -5,11 +5,12 @@
     },
     "slug": "python-oop-tutorial",
     "repository": "https://github.com/4GeeksAcademy/python-oop-tutorial",
-    "preview": "https://github.com/4GeeksAcademy/python-oop-tutorial/blob/main/preview.gif?raw=true",
+    "preview": "https://github.com/breatheco-de/python-oop-tutorial/blob/main/.learn/assets/preview.jpg?raw=true",
     "description": {
         "en": "Learn Object Oriented Programming concepts using Python, from basic to advanced topics",
         "es": "Aprende conceptos de Programación Orientada a Objetos usando Python, desde temas básicos hasta avanzados"
     },
+    "technologies": ["python", "object-oriented-programing", "oop", "programacion-orientada-a-objetos", "poo"],
     "duration": 6,
     "difficulty": "easy",
     "videoSolutions": false,
@@ -17,7 +18,7 @@
     "graded": true,
     "config": {
         "editor": {
-            "version": "1.0.73"
+            "version": "5.0"
         }
     }
 }
