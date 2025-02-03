@@ -1,13 +1,13 @@
 {
     "title": {
-        "en": "Learn Object Oriented Programming with Python",
+        "us": "Learn Object Oriented Programming with Python",
         "es": "Aprende Programación Orientada a Objetos con Python"
     },
     "slug": "python-oop-tutorial",
     "repository": "https://github.com/4GeeksAcademy/python-oop-tutorial",
     "preview": "https://github.com/breatheco-de/python-oop-tutorial/blob/main/.learn/assets/preview.jpg?raw=true",
     "description": {
-        "en": "Learn Object Oriented Programming concepts using Python, from basic to advanced topics. This tutorial covers classes, inheritance, polymorphism, encapsulation, and more. Ideal for beginners and experienced developers looking to deepen their understanding.",
+        "us": "Learn Object Oriented Programming concepts using Python, from basic to advanced topics. This tutorial covers classes, inheritance, polymorphism, encapsulation, and more. Ideal for beginners and experienced developers looking to deepen their understanding.",
         "es": "Aprende conceptos de Programación Orientada a Objetos usando Python, desde temas básicos hasta avanzados. Este tutorial cubre clases, herencia, polimorfismo, encapsulamiento y más. Ideal para principiantes y desarrolladores experimentados que buscan profundizar su comprensión."
     },
     "projectType": "tutorial",
