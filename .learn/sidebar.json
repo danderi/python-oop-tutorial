@@ -1,0 +1,47 @@
+{
+  "01.0-introduction-to-oop": {
+    "us": "01.0-introduction-to-oop"
+  },
+  "01.1-first-class": {
+    "us": "01.1-first-class"
+  },
+  "02.0-attributes-and-methods": {
+    "us": "02.0-attributes-and-methods"
+  },
+  "02.1-adding-attributes": {
+    "us": "02.1-adding-attributes"
+  },
+  "03.0-inheritance": {
+    "us": "03.0-inheritance"
+  },
+  "03.1-basic-inheritance": {
+    "us": "03.1-basic-inheritance"
+  },
+  "03.2-multiple-inheritance": {
+    "us": "03.2-multiple-inheritance"
+  },
+  "04.0-encapsulation": {
+    "us": "04.0-encapsulation"
+  },
+  "04.1-private-attributes": {
+    "us": "04.1-private-attributes"
+  },
+  "04.2-property-decorators": {
+    "us": "04.2-property-decorators"
+  },
+  "04.3-protected-attributes": {
+    "us": "04.3-protected-attributes"
+  },
+  "05.0-polymorphism": {
+    "us": "05.0-polymorphism"
+  },
+  "05.1-method-overriding": {
+    "us": "05.1-method-overriding"
+  },
+  "05.2-abstract-classes": {
+    "us": "05.2-abstract-classes"
+  },
+  "05.3-duck-typing": {
+    "us": "05.3-duck-typing"
+  }
+}
