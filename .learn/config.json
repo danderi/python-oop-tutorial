@@ -59,7 +59,7 @@
         "translations": []
     },
     "address": "https://orange-space-invention-xgx4rqr69xvc9v4x.github.dev",
-    "currentExercise": "02.0-attributes-and-methods",
+    "currentExercise": "03.1-basic-inheritance",
     "exercises": [
         {
             "position": 0,
@@ -163,7 +163,7 @@
                 "us": "README.md"
             },
             "language": "python3",
-            "entry": "exercises/02.1-adding-attributes/app.py",
+            "entry": "app.py",
             "title": "02.1-adding-attributes",
             "graded": true,
             "files": [
@@ -193,7 +193,7 @@
                     "hidden": true
                 }
             ],
-            "done": false
+            "done": true
         },
         {
             "position": 4,
@@ -230,7 +230,7 @@
                 "us": "README.md"
             },
             "language": "python3",
-            "entry": "exercises/03.1-basic-inheritance/app.py",
+            "entry": "app.py",
             "title": "03.1-basic-inheritance",
             "graded": true,
             "files": [
@@ -260,7 +260,7 @@
                     "hidden": true
                 }
             ],
-            "done": false
+            "done": true
         },
         {
             "position": 6,
