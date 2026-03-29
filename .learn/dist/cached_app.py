@@ -1,23 +1,32 @@
-# Create your Animal and Dog classes here
-class Animal:
+class Flying:
+    def __init__(self):
+        super().__init__()
+
+    def fly(self):
+        print("I can fly!")
+
+class Swimming:
+    def __init__(self):
+        super().__init__()
+
+    def swim(self):
+        print("I can swim!")
+
+class Bird:
     def __init__(self, name, species):
         self.name = name
         self.species = species
+        super().__init__()
 
-    def make_sound(self):
-        print("Some generic sound")
-
-class Dog(Animal):
+class Duck(Bird, Swimming, Flying):
     def __init__(self, name, species):
-      super().__init__(name, species)
+        super().__init__(name, species)
 
-    def make_sound(self):
-        print("Woof!")
+    def introduce(self):
+        print(f"I'm {self.name}, a {self.species} that can both fly and swim!")
 
-    def fetch(self):
-        print(f'{self.name} is fetching the ball')
+duck = Duck("Donald", "Mallard")
 
-my_dog = Dog("Buddy", "Canine")
-
-my_dog.make_sound()
-my_dog.fetch()
+duck.introduce()
+duck.fly()
+duck.swim()

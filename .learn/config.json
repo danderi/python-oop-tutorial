@@ -59,7 +59,7 @@
         "translations": []
     },
     "address": "https://orange-space-invention-xgx4rqr69xvc9v4x.github.dev",
-    "currentExercise": "03.1-basic-inheritance",
+    "currentExercise": "04.0-encapsulation",
     "exercises": [
         {
             "position": 0,
@@ -100,6 +100,11 @@
             "title": "01.1-first-class",
             "graded": true,
             "files": [
+                {
+                    "path": "exercises/01.1-first-class/__pycache__",
+                    "name": "__pycache__",
+                    "hidden": true
+                },
                 {
                     "path": "exercises/01.1-first-class/app.py",
                     "name": "app.py",
@@ -163,10 +168,15 @@
                 "us": "README.md"
             },
             "language": "python3",
-            "entry": "app.py",
+            "entry": "exercises/02.1-adding-attributes/app.py",
             "title": "02.1-adding-attributes",
             "graded": true,
             "files": [
+                {
+                    "path": "exercises/02.1-adding-attributes/__pycache__",
+                    "name": "__pycache__",
+                    "hidden": true
+                },
                 {
                     "path": "exercises/02.1-adding-attributes/app.py",
                     "name": "app.py",
@@ -230,10 +240,15 @@
                 "us": "README.md"
             },
             "language": "python3",
-            "entry": "app.py",
+            "entry": "exercises/03.1-basic-inheritance/app.py",
             "title": "03.1-basic-inheritance",
             "graded": true,
             "files": [
+                {
+                    "path": "exercises/03.1-basic-inheritance/__pycache__",
+                    "name": "__pycache__",
+                    "hidden": true
+                },
                 {
                     "path": "exercises/03.1-basic-inheritance/app.py",
                     "name": "app.py",
@@ -301,7 +316,7 @@
                     "hidden": true
                 }
             ],
-            "done": false
+            "done": true
         },
         {
             "position": 7,
@@ -605,5 +620,5 @@
     "bugsLink": null,
     "videoSolutions": false,
     "localhostOnly": false,
-    "session": 2289210717353957600
+    "session": 2272718005615723800
 }
