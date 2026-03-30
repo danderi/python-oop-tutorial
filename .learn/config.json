@@ -59,7 +59,7 @@
         "translations": []
     },
     "address": "https://orange-space-invention-xgx4rqr69xvc9v4x.github.dev",
-    "currentExercise": "04.0-encapsulation",
+    "currentExercise": "04.2-property-decorators",
     "exercises": [
         {
             "position": 0,
@@ -291,6 +291,11 @@
             "graded": true,
             "files": [
                 {
+                    "path": "exercises/03.2-multiple-inheritance/__pycache__",
+                    "name": "__pycache__",
+                    "hidden": true
+                },
+                {
                     "path": "exercises/03.2-multiple-inheritance/app.py",
                     "name": "app.py",
                     "hidden": false
@@ -383,7 +388,7 @@
                     "hidden": true
                 }
             ],
-            "done": false
+            "done": true
         },
         {
             "position": 9,
@@ -394,7 +399,7 @@
                 "us": "README.md"
             },
             "language": "python3",
-            "entry": "exercises/04.2-property-decorators/app.py",
+            "entry": "app.py",
             "title": "04.2-property-decorators",
             "graded": true,
             "files": [
@@ -424,7 +429,7 @@
                     "hidden": true
                 }
             ],
-            "done": false
+            "done": true
         },
         {
             "position": 10,
@@ -620,5 +625,5 @@
     "bugsLink": null,
     "videoSolutions": false,
     "localhostOnly": false,
-    "session": 2272718005615723800
+    "session": 9078710636406156000
 }

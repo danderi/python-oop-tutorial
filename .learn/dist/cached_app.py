@@ -1,32 +1,25 @@
-class Flying:
-    def __init__(self):
-        super().__init__()
+# Create your Temperature class here with properties for celsius and fahrenheit
+class Temperature:
+    def __init__(self, celsius):
+        self.__celsius = None
+        self.celsius = celsius  # usamos el setter para validar desde el inicio
 
-    def fly(self):
-        print("I can fly!")
+    @property
+    def celsius(self):
+        return self.__celsius
 
-class Swimming:
-    def __init__(self):
-        super().__init__()
+    @celsius.setter
+    def celsius(self, value):
+        if value >= -273.15:
+            self.__celsius = value
+        else:
+            print("Temperature too low. Cannot be set.")
 
-    def swim(self):
-        print("I can swim!")
+    @property
+    def fahrenheit(self):
+        return (self.__celsius * 9/5) + 32
 
-class Bird:
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        super().__init__()
-
-class Duck(Bird, Swimming, Flying):
-    def __init__(self, name, species):
-        super().__init__(name, species)
-
-    def introduce(self):
-        print(f"I'm {self.name}, a {self.species} that can both fly and swim!")
-
-duck = Duck("Donald", "Mallard")
-
-duck.introduce()
-duck.fly()
-duck.swim()
+    @fahrenheit.setter
+    def fahrenheit(self, value):
+        celsius_value = (value - 32) * 5/9
+        self.celsius = celsius_value  # reutilizamos validación  
