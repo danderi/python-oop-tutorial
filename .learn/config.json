@@ -59,7 +59,7 @@
         "translations": []
     },
     "address": "https://orange-space-invention-xgx4rqr69xvc9v4x.github.dev",
-    "currentExercise": "05.2-abstract-classes",
+    "currentExercise": "05.3-duck-typing",
     "exercises": [
         {
             "position": 0,
@@ -558,7 +558,7 @@
                 "us": "README.md"
             },
             "language": "python3",
-            "entry": "exercises/05.2-abstract-classes/app.py",
+            "entry": "app.py",
             "title": "05.2-abstract-classes",
             "graded": true,
             "files": [
@@ -588,7 +588,7 @@
                     "hidden": true
                 }
             ],
-            "done": false
+            "done": true
         },
         {
             "position": 14,
@@ -599,7 +599,7 @@
                 "us": "README.md"
             },
             "language": "python3",
-            "entry": "exercises/05.3-duck-typing/app.py",
+            "entry": "app.py",
             "title": "05.3-duck-typing",
             "graded": true,
             "files": [
@@ -629,7 +629,7 @@
                     "hidden": true
                 }
             ],
-            "done": false
+            "done": true
         }
     ],
     "bugsLink": null,

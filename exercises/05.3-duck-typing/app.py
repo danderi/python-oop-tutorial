@@ -1,16 +1,51 @@
 class DataManager:
     """Class that works with any data processor through duck typing"""
     def __init__(self, processor):
-        """Initialize with any processor that supports the required methods"""
         self.processor = processor
     
     def process_data(self, data):
-        """Process data using the provided processor"""
-        # write your code here
-        pass
+        self.processor.load_data(data)
+        self.processor.process()
+        return self.processor.export()
 
-# Create your JsonProcessor class here
 
-# Create your CsvProcessor class here
+class JsonProcessor:
+    def load_data(self, data):
+        self.data = f"Loading JSON data: {data}"
 
-# Create your XmlProcessor class here
+    def process(self):
+        self.data = self.data.upper()
+
+    def export(self):
+        return f"Exporting JSON data: {self.data}"
+
+
+class CsvProcessor:
+    def load_data(self, data):
+        self.data = f"Loading CSV data: {data}"
+
+    def process(self):
+        self.data = self.data.lower()
+
+    def export(self):
+        return f"Exporting CSV data: {self.data}"
+
+
+class XmlProcessor:
+    def load_data(self, data):
+        self.data = f"Loading XML data: {data}"
+
+    def process(self):
+        self.data = self.data[::-1]
+
+    def export(self):
+        return f"Exporting XML data: {self.data}"
+    
+
+json_data = '{"name": "John", "age": 30}'
+csv_data = 'name,age\nJohn,30'
+xml_data = '<person><name>John</name><age>30</age></person>'
+
+json_proc = JsonProcessor()
+csv_proc = CsvProcessor()
+xml_proc = XmlProcessor()

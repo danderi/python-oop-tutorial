@@ -1,61 +1,51 @@
-from math import pi
+class DataManager:
+    """Class that works with any data processor through duck typing"""
+    def __init__(self, processor):
+        self.processor = processor
+    
+    def process_data(self, data):
+        self.processor.load_data(data)
+        self.processor.process()
+        return self.processor.export()
 
-class Shape:
-    """Base class for all shapes"""
-    def area(self):
-        """Calculate the area of the shape"""
-        return 0
-    
-    def perimeter(self):
-        """Calculate the perimeter of the shape"""
-        return 0
-    
-    def describe(self):
-        """Return a description of the shape"""
-        return "Generic shape"
 
-# Create your Circle class here
-class Circle(Shape):
-    def __init__(self, radius):
-        self.radius = radius
-    
-    def area(self):
-        return pi * self.radius ** 2
-    
-    def perimeter(self):
-        return 2 * pi * self.radius
-    
-    def describe(self):
-        return f"Circle with radius {self.radius} - Area: {self.area()}, Perimeter: {self.perimeter()}"
+class JsonProcessor:
+    def load_data(self, data):
+        self.data = f"Loading JSON data: {data}"
 
-# Create your Rectangle class here
-class Rectangle(Shape):
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
-    
-    def area(self):
-        return self.width * self.height
-    
-    def perimeter(self):
-        return 2 * (self.width + self.height)
-    
-    def describe(self):
-        return f"Rectangle {self.width}x{self.height} - Area: {self.area()}, Perimeter: {self.perimeter()}"
+    def process(self):
+        self.data = self.data.upper()
 
-# Create your Triangle class here
-class Triangle(Shape):
-    def __init__(self, side1, side2, side3, height):
-        self.side1 = side1
-        self.side2 = side2
-        self.side3 = side3
-        self.height = height
+    def export(self):
+        return f"Exporting JSON data: {self.data}"
+
+
+class CsvProcessor:
+    def load_data(self, data):
+        self.data = f"Loading CSV data: {data}"
+
+    def process(self):
+        self.data = self.data.lower()
+
+    def export(self):
+        return f"Exporting CSV data: {self.data}"
+
+
+class XmlProcessor:
+    def load_data(self, data):
+        self.data = f"Loading XML data: {data}"
+
+    def process(self):
+        self.data = self.data[::-1]
+
+    def export(self):
+        return f"Exporting XML data: {self.data}"
     
-    def area(self):
-        return (self.side1 * self.height) / 2
-    
-    def perimeter(self):
-        return self.side1 + self.side2 + self.side3
-    
-    def describe(self):
-        return f"Triangle with sides {self.side1},{self.side2},{self.side3} - Area: {self.area()}, Perimeter: {self.perimeter()}"
+
+json_data = '{"name": "John", "age": 30}'
+csv_data = 'name,age\nJohn,30'
+xml_data = '<person><name>John</name><age>30</age></person>'
+
+json_proc = JsonProcessor()
+csv_proc = CsvProcessor()
+xml_proc = XmlProcessor()
